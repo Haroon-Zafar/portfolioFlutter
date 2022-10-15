@@ -73,7 +73,12 @@ class _MyHomeState extends State<MyHome> {
             child: Column(
               children: [
                 Row(
-                  children: [],
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    myAchiev('78', 'Project'),
+                    myAchiev('78', 'Project'),
+                    myAchiev('78', 'Project'),
+                  ],
                 ),
               ],
             ),
