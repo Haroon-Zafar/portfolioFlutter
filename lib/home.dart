@@ -32,6 +32,41 @@ class _MyHomeState extends State<MyHome> {
     );
   }
 
+  mySpecifications(icon, tech) {
+    return Container(
+      height: 115,
+      width: 105,
+      child: Card(
+        margin: EdgeInsets.all(0),
+        color: Color(0xff252525),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.android,
+                color: Colors.white,
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                tech,
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -97,40 +132,12 @@ class _MyHomeState extends State<MyHome> {
                 Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       // Making three different Containers.
                       children: [
-                        Container(
-                          height: 115,
-                          width: 105,
-                          child: Card(
-                            margin: EdgeInsets.all(0),
-                            color: Color(0xff252525),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            child: Container(
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.android,
-                                    color: Colors.white,
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text(
-                                    "Android",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        mySpecifications(Icons.android, 'Android'),
+                        mySpecifications(Icons.android, 'Android'),
+                        mySpecifications(Icons.android, 'Android'),
                       ],
                     ),
                   ],
@@ -143,3 +150,38 @@ class _MyHomeState extends State<MyHome> {
     );
   }
 }
+
+
+
+//                         Container(
+                        //   height: 115,
+                        //   width: 105,
+                        //   child: Card(
+                        //     margin: EdgeInsets.all(0),
+                        //     color: Color(0xff252525),
+                        //     shape: RoundedRectangleBorder(
+                        //       borderRadius: BorderRadius.circular(15),
+                        //     ),
+                        //     child: Container(
+                        //       child: Column(
+                        //         mainAxisAlignment: MainAxisAlignment.center,
+                        //         children: [
+                        //           Icon(
+                        //             Icons.android,
+                        //             color: Colors.white,
+                        //           ),
+                        //           SizedBox(
+                        //             height: 10,
+                        //           ),
+                        //           Text(
+                        //             "Android",
+                        //             style: TextStyle(
+                        //               fontSize: 16,
+                        //               color: Colors.white,
+                        //             ),
+                        //           ),
+                        //         ],
+                        //       ),
+                        //     ),
+                        //   ),
+                        // ),
