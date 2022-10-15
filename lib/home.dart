@@ -100,6 +100,7 @@ class _MyHomeState extends State<MyHome> {
                           height: 115,
                           width: 105,
                           child: Card(
+                            margin: EdgeInsets.all(0),
                             color: Color(0xff252525),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15),
