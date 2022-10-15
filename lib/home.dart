@@ -11,6 +11,27 @@ class MyHome extends StatefulWidget {
 }
 
 class _MyHomeState extends State<MyHome> {
+  // Making a function to avoid redundant code
+  myAchiev(num, type) {
+    return Row(
+      children: [
+        Text(
+          num,
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.only(
+            top: 10,
+          ),
+          child: Text(type),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,24 +73,7 @@ class _MyHomeState extends State<MyHome> {
             child: Column(
               children: [
                 Row(
-                  children: [
-                    Row(
-                      children: [
-                        Text(
-                          "20",
-                          style: TextStyle(
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Container(
-                            margin: EdgeInsets.only(
-                              top: 10,
-                            ),
-                            child: Text("Projects")),
-                      ],
-                    ),
-                  ],
+                  children: [],
                 ),
               ],
             ),
