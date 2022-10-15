@@ -43,7 +43,7 @@ class _MyHomeState extends State<MyHome> {
       ),
       body: SlidingSheet(
         elevation: 8,
-        cornerRadius: 80,
+        cornerRadius: 40,
         snapSpec: const SnapSpec(
           // Enable snapping. This is true by default.
           snap: true,
@@ -95,7 +95,18 @@ class _MyHomeState extends State<MyHome> {
                   children: [
                     Row(
                       // Making three different Containers.
-                      children: [],
+                      children: [
+                        Container(
+                          height: 115,
+                          width: 105,
+                          child: Card(
+                            color: Color(0xff252525),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
