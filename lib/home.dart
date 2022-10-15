@@ -62,7 +62,11 @@ class _MyHomeState extends State<MyHome> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text("Projects"),
+                        Container(
+                            margin: EdgeInsets.only(
+                              top: 10,
+                            ),
+                            child: Text("Projects")),
                       ],
                     ),
                   ],
