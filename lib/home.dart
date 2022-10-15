@@ -71,14 +71,22 @@ class _MyHomeState extends State<MyHome> {
             margin: EdgeInsets.only(left: 40, right: 40, top: 40),
             height: 500,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     myAchiev('78', 'Project'),
-                    myAchiev('78', 'Project'),
-                    myAchiev('78', 'Project'),
+                    myAchiev('2', 'Clients'),
+                    myAchiev('10', 'Orders'),
                   ],
+                ),
+                Text(
+                  "Specialized In",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ],
             ),
