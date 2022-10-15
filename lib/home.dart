@@ -140,6 +140,30 @@ class _MyHomeState extends State<MyHome> {
                         mySpecifications(Icons.android, 'Android'),
                       ],
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // Making three different Containers.
+                      children: [
+                        mySpecifications(Icons.android, 'Android'),
+                        mySpecifications(Icons.android, 'Android'),
+                        mySpecifications(Icons.android, 'Android'),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // Making three different Containers.
+                      children: [
+                        mySpecifications(Icons.android, 'Android'),
+                        mySpecifications(Icons.android, 'Android'),
+                        mySpecifications(Icons.android, 'Android'),
+                      ],
+                    ),
                   ],
                 ),
               ],
