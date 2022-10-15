@@ -12,9 +12,10 @@ class _MyHomeState extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade200,
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Simple Example'),
+        elevation: 0,
+        backgroundColor: Colors.transparent,
       ),
       body: SlidingSheet(
         elevation: 8,
