@@ -91,6 +91,9 @@ class _MyHomeState extends State<MyHome> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Column(
                   children: [
                     Row(
@@ -112,6 +115,9 @@ class _MyHomeState extends State<MyHome> {
                                   Icon(
                                     Icons.android,
                                     color: Colors.white,
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     "Android",
