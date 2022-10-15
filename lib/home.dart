@@ -47,7 +47,7 @@ class _MyHomeState extends State<MyHome> {
           // scrolled, if the content is bigger than the available
           // height of the sheet.
           return Container(
-            margin: EdgeInsets.only(left: 20, right: 20, top: 20),
+            margin: EdgeInsets.only(left: 40, right: 40, top: 40),
             height: 500,
             child: Column(
               children: [
@@ -55,7 +55,13 @@ class _MyHomeState extends State<MyHome> {
                   children: [
                     Row(
                       children: [
-                        Text("20"),
+                        Text(
+                          "20",
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Text("Projects"),
                       ],
                     ),
