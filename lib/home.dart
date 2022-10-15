@@ -20,12 +20,12 @@ class _MyHomeState extends State<MyHome> {
       ),
       body: SlidingSheet(
         elevation: 8,
-        cornerRadius: 16,
+        cornerRadius: 50,
         snapSpec: const SnapSpec(
           // Enable snapping. This is true by default.
           snap: true,
           // Set custom snapping points.
-          snappings: [0.4, 0.7, 1.0],
+          snappings: [0.38, 0.7, 1.0],
           // Define to what the snappings relate to. In this case,
           // the total available space that the sheet can expand to.
           positioning: SnapPositioning.relativeToAvailableSpace,
