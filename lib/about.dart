@@ -11,6 +11,13 @@ class MyAbout extends StatefulWidget {
 class _MyAboutState extends State<MyAbout> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+      ),
+    );
   }
 }
