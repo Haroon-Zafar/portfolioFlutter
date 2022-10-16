@@ -45,9 +45,23 @@ class _MyAboutState extends State<MyAbout> {
             Container(
               alignment: Alignment.center,
               margin: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.49),
+                  top: MediaQuery.of(context).size.height * 0.55),
               child: Column(
                 children: [
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Hello I am",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Text(
                     "Haroon Zafar",
                     style: TextStyle(
@@ -65,6 +79,18 @@ class _MyAboutState extends State<MyAbout> {
                       color: Colors.white,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    child: TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Hire Me",
+                      ),
+                      style: TextButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        primary: Colors.black,
+                      ),
                     ),
                   ),
                 ],
