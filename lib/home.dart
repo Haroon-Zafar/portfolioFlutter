@@ -91,7 +91,14 @@ class _MyHomeState extends State<MyHome> {
         // The body widget will be displayed under the SlidingSheet
         // and a parallax effect can be applied to it.
         // why using Container ? because we get properties padding and styling easily.
-        body: Container(),
+        body: Container(
+          // why using Stack() instead of Column() ? because we can put widgets on top of each other.
+          child: Stack(
+            children: [
+              Container(),
+            ],
+          ),
+        ),
         builder: (context, state) {
           // This is the content of the sheet that will get
           // scrolled, if the content is bigger than the available
