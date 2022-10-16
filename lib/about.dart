@@ -87,6 +87,7 @@ class _MyAboutState extends State<MyAbout> {
                   ),
                   SizedBox(
                     width: 120,
+                    height: 50,
                     child: TextButton(
                       onPressed: () {},
                       child: Text(
@@ -100,7 +101,14 @@ class _MyAboutState extends State<MyAbout> {
                   ),
                   // For Icons
                   Row(
-                    children: [],
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          FontAwesomeIcons.instagram,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
