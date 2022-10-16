@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_flutter/about.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyAbout extends StatefulWidget {
   const MyAbout({Key? key}) : super(key: key);
@@ -96,6 +97,10 @@ class _MyAboutState extends State<MyAbout> {
                         primary: Colors.black,
                       ),
                     ),
+                  ),
+                  // For Icons
+                  Row(
+                    children: [],
                   ),
                 ],
               ),
