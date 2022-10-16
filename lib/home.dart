@@ -90,14 +90,8 @@ class _MyHomeState extends State<MyHome> {
         ),
         // The body widget will be displayed under the SlidingSheet
         // and a parallax effect can be applied to it.
-        body: Center(
-          child: Text(
-            'This widget is below the SlidingSheet',
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-        ),
+        // why using Container ? because we get properties padding and styling easily.
+        body: Container(),
         builder: (context, state) {
           // This is the content of the sheet that will get
           // scrolled, if the content is bigger than the available
@@ -175,37 +169,35 @@ class _MyHomeState extends State<MyHome> {
   }
 }
 
-
-
 //                         Container(
-                        //   height: 115,
-                        //   width: 105,
-                        //   child: Card(
-                        //     margin: EdgeInsets.all(0),
-                        //     color: Color(0xff252525),
-                        //     shape: RoundedRectangleBorder(
-                        //       borderRadius: BorderRadius.circular(15),
-                        //     ),
-                        //     child: Container(
-                        //       child: Column(
-                        //         mainAxisAlignment: MainAxisAlignment.center,
-                        //         children: [
-                        //           Icon(
-                        //             Icons.android,
-                        //             color: Colors.white,
-                        //           ),
-                        //           SizedBox(
-                        //             height: 10,
-                        //           ),
-                        //           Text(
-                        //             "Android",
-                        //             style: TextStyle(
-                        //               fontSize: 16,
-                        //               color: Colors.white,
-                        //             ),
-                        //           ),
-                        //         ],
-                        //       ),
-                        //     ),
-                        //   ),
-                        // ),
+//   height: 115,
+//   width: 105,
+//   child: Card(
+//     margin: EdgeInsets.all(0),
+//     color: Color(0xff252525),
+//     shape: RoundedRectangleBorder(
+//       borderRadius: BorderRadius.circular(15),
+//     ),
+//     child: Container(
+//       child: Column(
+//         mainAxisAlignment: MainAxisAlignment.center,
+//         children: [
+//           Icon(
+//             Icons.android,
+//             color: Colors.white,
+//           ),
+//           SizedBox(
+//             height: 10,
+//           ),
+//           Text(
+//             "Android",
+//             style: TextStyle(
+//               fontSize: 16,
+//               color: Colors.white,
+//             ),
+//           ),
+//         ],
+//       ),
+//     ),
+//   ),
+// ),
