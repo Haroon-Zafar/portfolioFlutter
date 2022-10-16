@@ -11,6 +11,6 @@ class MyAbout extends StatefulWidget {
 class _MyAboutState extends State<MyAbout> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
