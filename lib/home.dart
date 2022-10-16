@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:sliding_sheet/sliding_sheet.dart';
@@ -95,10 +96,46 @@ class _MyHomeState extends State<MyHome> {
           // why using Stack() instead of Column() ? because we can put widgets on top of each other.
           child: Stack(
             children: [
-              Container(),
+              Container(
+                margin: EdgeInsets.only(
+                  right: 80,
+                ),
+                child: ShaderMask(
+                    shaderCallback: (rect) {
+                      return LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [Colors.black, Colors.transparent],
+                      ).createShader(
+                          Rect.fromLTRB(0, 0, rect.width, rect.height));
+                    },
+                    blendMode: BlendMode.dstIn,
+                    child: Image.asset(
+                      'assets/img.png',
+                      height: 400,
+                      fit: BoxFit.contain,
+                    )),
+              ),
+              Container(
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.49),
+                child: Column(
+                  children: [
+                    Text(
+                      "Muhammad Haroon Zafar",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    Text(
+                      "Web Developer",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
+
         builder: (context, state) {
           // This is the content of the sheet that will get
           // scrolled, if the content is bigger than the available
