@@ -71,7 +71,7 @@ class _MyAboutState extends State<MyAbout> {
                     ),
                   ),
                   SizedBox(
-                    height: 5,
+                    height: 10,
                   ),
                   Text(
                     "Web Developer",
@@ -82,6 +82,10 @@ class _MyAboutState extends State<MyAbout> {
                     ),
                   ),
                   SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    width: 120,
                     child: TextButton(
                       onPressed: () {},
                       child: Text(
