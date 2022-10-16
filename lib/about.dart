@@ -106,6 +106,7 @@ class _MyAboutState extends State<MyAbout> {
                         onPressed: () {},
                         icon: Icon(
                           FontAwesomeIcons.instagram,
+                          color: Colors.white,
                         ),
                       ),
                     ],
