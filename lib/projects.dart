@@ -38,6 +38,7 @@ class _MyProjectsState extends State<MyProjects> {
                       top: 30,
                     ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "Flutter",
