@@ -17,7 +17,17 @@ class _MyProjectsState extends State<MyProjects> {
         title: const Text('My Projects'),
       ),
       body: SingleChildScrollView(
-        child: Container(),
+        // why use Container() because we have to use margin and padding
+        child: Container(
+          child: Column(
+            children: [
+              // again using Container for the very same reason.
+              Container(
+                child: ,
+              ),
+            ],
+          ),
+        ),
         
       ),
     );
