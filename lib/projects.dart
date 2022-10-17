@@ -20,13 +20,15 @@ class _MyProjectsState extends State<MyProjects> {
         // why use Container() because we have to use margin and padding
         child: Container(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               // again using Container for the very same reason.
               Container(
                 height: 220,
                 width: MediaQuery.of(context).size.width * 0.9,
-                color: Color(0xff262628),
+                
                 child: Card(
+                  color: Color(0xff262628),
                   child: Container(
                     child: Column(
 
