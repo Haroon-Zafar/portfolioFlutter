@@ -17,6 +17,7 @@ class _MyProjectsState extends State<MyProjects> {
         title: const Text('My Projects'),
       ),
       body: SingleChildScrollView(
+        child: Container(),
         
       ),
     );
