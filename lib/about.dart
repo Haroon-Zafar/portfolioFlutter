@@ -25,7 +25,7 @@ class _MyAboutState extends State<MyAbout> {
           children: [
             Container(
               margin: EdgeInsets.only(
-                right: 80,
+                right: 80, 
               ),
               child: ShaderMask(
                 shaderCallback: (rect) {
@@ -99,8 +99,12 @@ class _MyAboutState extends State<MyAbout> {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    height: 40,
+                  ),
                   // For Icons
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       IconButton(
                         onPressed: () {},
@@ -109,6 +113,35 @@ class _MyAboutState extends State<MyAbout> {
                           color: Colors.white,
                         ),
                       ),
+                                            IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          FontAwesomeIcons.linkedinIn,
+                          color: Colors.white,
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          FontAwesomeIcons.github,
+                          color: Colors.white,
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          FontAwesomeIcons.twitter,
+                          color: Colors.white,
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          FontAwesomeIcons.facebook,
+                          color: Colors.white,
+                        ),
+                      ),
+
                     ],
                   ),
                 ],
