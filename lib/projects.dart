@@ -50,9 +50,17 @@ class _MyProjectsState extends State<MyProjects> {
                         Text(
                           "An Online Compiler",
                           style: TextStyle(
+                            color: Colors.white70,
+                            fontSize: 16,
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.star,
                               color: Colors.white70,
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold),
+                            ),
+                          ],
                         ),
                       ],
                     ),
