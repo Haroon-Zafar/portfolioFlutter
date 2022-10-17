@@ -16,6 +16,9 @@ class _MyProjectsState extends State<MyProjects> {
         backgroundColor: Color(0xff252525),
         title: const Text('My Projects'),
       ),
+      body: SingleChildScrollView(
+        
+      ),
     );
   }
 }
