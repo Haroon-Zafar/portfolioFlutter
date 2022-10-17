@@ -23,6 +23,8 @@ class _MyProjectsState extends State<MyProjects> {
             children: [
               // again using Container for the very same reason.
               Container(
+                height: 220,
+                width: MediaQuery.of(context).size.width * 0.9,
                 color: Color(0xff262628),
                 child: Card(
                   child: Container(
