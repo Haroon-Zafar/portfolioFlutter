@@ -18,7 +18,9 @@ class _MyProjectsState extends State<MyProjects> {
       ),
       body: SingleChildScrollView(
         // why use Container() because we have to use margin and padding
+        
         child: Container(
+          alignment: Alignment.center,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
