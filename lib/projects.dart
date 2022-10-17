@@ -36,22 +36,22 @@ class _MyProjectsState extends State<MyProjects> {
                         Text(
                           "Flutter",
                           style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
+                        ),
+                        Text(
+                          "Click 2 Code",
+                          style: TextStyle(
                               color: Colors.white,
-                              fontSize: 20,
+                              fontSize: 30,
                               fontWeight: FontWeight.bold),
                         ),
                         Text(
-                          "Flutter",
+                          "An Online Compiler",
                           style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          "Flutter",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
+                              color: Colors.white70,
+                              fontSize: 16,
                               fontWeight: FontWeight.bold),
                         ),
                       ],
