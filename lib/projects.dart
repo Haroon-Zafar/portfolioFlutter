@@ -32,6 +32,11 @@ class _MyProjectsState extends State<MyProjects> {
                 child: Card(
                   color: Color(0xff262628),
                   child: Container(
+                    margin: EdgeInsets.only(
+                      left: 20,
+                      right: 20,
+                      top: 30,
+                    ),
                     child: Column(
                       children: [
                         Text(
