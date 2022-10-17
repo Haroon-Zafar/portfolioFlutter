@@ -11,6 +11,7 @@ class _MyProjectsState extends State<MyProjects> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Color(0xff252525),
         title: const Text('My Projects'),
