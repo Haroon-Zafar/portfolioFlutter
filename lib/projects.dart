@@ -23,7 +23,14 @@ class _MyProjectsState extends State<MyProjects> {
             children: [
               // again using Container for the very same reason.
               Container(
-                child: ,
+                color: Color(0xff262628),
+                child: Card(
+                  child: Container(
+                    child: Column(
+
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
