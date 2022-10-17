@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyProjects extends StatefulWidget {
   const MyProjects({Key? key}) : super(key: key);
@@ -59,7 +60,21 @@ class _MyProjectsState extends State<MyProjects> {
                             Icon(
                               Icons.star,
                               color: Colors.white70,
+                              size: 18,
                             ),
+                            Text(
+                              "10",
+                              style: TextStyle(
+                                color: Colors.white70,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                FontAwesomeIcons.github,
+                                color: Colors.white70,
+                              ),
+                            )
                           ],
                         ),
                       ],
