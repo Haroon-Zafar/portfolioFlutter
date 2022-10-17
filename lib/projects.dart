@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyProjects extends StatefulWidget {
-  const MyProjects({ Key? key }) : super(key: key);
+  const MyProjects({Key? key}) : super(key: key);
 
   @override
   State<MyProjects> createState() => _MyProjectsState();
@@ -18,7 +18,7 @@ class _MyProjectsState extends State<MyProjects> {
       ),
       body: SingleChildScrollView(
         // why use Container() because we have to use margin and padding
-        
+
         child: Container(
           alignment: Alignment.center,
           child: Column(
@@ -28,12 +28,33 @@ class _MyProjectsState extends State<MyProjects> {
               Container(
                 height: 220,
                 width: MediaQuery.of(context).size.width * 0.9,
-                
                 child: Card(
                   color: Color(0xff262628),
                   child: Container(
                     child: Column(
-
+                      children: [
+                        Text(
+                          "Flutter",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "Flutter",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "Flutter",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -41,7 +62,6 @@ class _MyProjectsState extends State<MyProjects> {
             ],
           ),
         ),
-        
       ),
     );
   }
