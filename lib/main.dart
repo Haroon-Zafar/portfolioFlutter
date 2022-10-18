@@ -6,7 +6,10 @@ import 'package:portfolio_flutter/projects.dart';
 void main() {
   runApp(
     MaterialApp(
-      initialRoute: 'projects',
+      theme: ThemeData(
+        fontFamily: "Soho",
+      ),
+      initialRoute: 'home',
       debugShowCheckedModeBanner: false,
       routes: {
         'home': (context) => MyHome(),

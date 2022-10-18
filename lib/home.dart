@@ -126,6 +126,7 @@ class _MyHomeState extends State<MyHome> {
                     Text(
                       "Haroon Zafar",
                       style: TextStyle(
+                        fontFamily: "Soho",
                         color: Colors.white,
                         fontSize: 40,
                         fontWeight: FontWeight.bold,
