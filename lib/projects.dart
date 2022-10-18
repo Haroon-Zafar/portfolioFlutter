@@ -47,12 +47,18 @@ class _MyProjectsState extends State<MyProjects> {
                             fontSize: 20,
                           ),
                         ),
+                        SizedBox(
+                          height: 15,
+                        ),
                         Text(
                           "Click 2 Code",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 30,
                               fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 3,
                         ),
                         Text(
                           "An Online Compiler",
@@ -61,12 +67,18 @@ class _MyProjectsState extends State<MyProjects> {
                             fontSize: 16,
                           ),
                         ),
+                        SizedBox(
+                          height: 10,
+                        ),
                         Row(
                           children: [
                             Icon(
                               Icons.star,
                               color: Colors.white70,
                               size: 18,
+                            ),
+                            SizedBox(
+                              width: 4,
                             ),
                             Text(
                               "10",
