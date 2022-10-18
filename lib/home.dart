@@ -85,7 +85,12 @@ class _MyHomeState extends State<MyHome> {
             ),
             PopupMenuItem(
               child: TextButton(
-                child: Text("Projects"),
+                child: Text(
+                  "Projects",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
                 onPressed: () {},
               ),
               value: 1,
