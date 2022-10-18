@@ -34,8 +34,8 @@ class _MyProjectsState extends State<MyProjects> {
                   child: Container(
                     margin: EdgeInsets.only(
                       left: 20,
-                      right: 20,
-                      top: 30,
+                      right: 10,
+                      top: 40,
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
