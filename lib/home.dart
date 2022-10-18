@@ -88,12 +88,19 @@ class _MyHomeState extends State<MyHome> {
                 child: Text("Projects"),
                 onPressed: () {},
               ),
+              value: 1,
             ),
             PopupMenuItem(
               child: TextButton(
-                child: Text("Projects"),
+                child: Text(
+                  "About Me",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
                 onPressed: () {},
               ),
+              value: 2,
             ),
           ],
         ),
