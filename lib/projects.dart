@@ -86,6 +86,8 @@ class _MyProjectsState extends State<MyProjects> {
                                 color: Colors.white70,
                               ),
                             ),
+                            //Expanded is used to place the github icon at the top most right.
+                            Expanded(child: Container()),
                             IconButton(
                               onPressed: () {},
                               icon: Icon(
