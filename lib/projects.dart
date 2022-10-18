@@ -10,7 +10,7 @@ class MyProjects extends StatefulWidget {
 
 class _MyProjectsState extends State<MyProjects> {
   // Making myProjects function for Code-Reusability.
-  myProjects() {
+  myProjects(language, title, description, stars) {
     return Container(
       height: 220,
       width: MediaQuery.of(context).size.width * 0.9,
@@ -26,7 +26,7 @@ class _MyProjectsState extends State<MyProjects> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Flutter",
+                language,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,
@@ -36,7 +36,7 @@ class _MyProjectsState extends State<MyProjects> {
                 height: 15,
               ),
               Text(
-                "Click 2 Code",
+                title,
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 30,
@@ -46,7 +46,7 @@ class _MyProjectsState extends State<MyProjects> {
                 height: 3,
               ),
               Text(
-                "An Online Compiler",
+                description,
                 style: TextStyle(
                   color: Colors.white70,
                   fontSize: 16,
@@ -66,7 +66,7 @@ class _MyProjectsState extends State<MyProjects> {
                     width: 4,
                   ),
                   Text(
-                    "10",
+                    stars,
                     style: TextStyle(
                       color: Colors.white70,
                     ),
