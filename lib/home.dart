@@ -88,7 +88,11 @@ class _MyHomeState extends State<MyHome> {
                     color: Colors.white,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  //  You click on Projects and Projects screen will open.
+                  // Use Semi-Colo ;
+                  Navigator.pushNamed(context, 'projects');
+                },
               ),
               value: 1,
             ),
