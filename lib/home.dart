@@ -75,14 +75,11 @@ class _MyHomeState extends State<MyHome> {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         leading: PopupMenuButton(
+          icon: Icon(
+            Icons.menu,
+          ),
           color: Colors.black,
           itemBuilder: (context) => [
-            PopupMenuItem(
-              child: TextButton(
-                child: Text("Projects"),
-                onPressed: () {},
-              ),
-            ),
             PopupMenuItem(
               child: TextButton(
                 child: Text(
