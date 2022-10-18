@@ -104,7 +104,9 @@ class _MyHomeState extends State<MyHome> {
                     color: Colors.white,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, 'about');
+                },
               ),
               value: 2,
             ),
